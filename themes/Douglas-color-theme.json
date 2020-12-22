@@ -1,5 +1,5 @@
 {
-    "name": "Douglas",
+	"name": "Douglas",
 	"type": "dark",
 	"colors": {
 		"activityBar.background": "#353535",
@@ -569,7 +569,7 @@
 		{
 			"scope": "storage",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -604,21 +604,21 @@
 		{
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "support.function",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -660,14 +660,14 @@
 		{
 			"scope": "meta.function-call.object",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "variable.other.property",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -680,7 +680,7 @@
 				"keyword.other.operator"
 			],
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -694,7 +694,7 @@
 		{
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -715,7 +715,7 @@
 		{
 			"scope": "meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script, source.js.embedded punctuation.definition.tag.html, source.css.embedded punctuation.definition.tag.html",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#56B7CA",
 				"fontStyle": ""
 			}
 		},
@@ -747,7 +747,7 @@
 			}
 		},
 		{
-			"comment" : "#Punctuation for strings",
+			"comment": "#Punctuation for strings",
 			"scope": "punctuation.definition.string.begin, punctuation.definition.string.end",
 			"settings": {
 				"foreground": "#56b7ca",
@@ -755,7 +755,7 @@
 			}
 		},
 		{
-			"comment" : "#String Text colour",
+			"comment": "#String Text colour",
 			"scope": "string.quoted.double",
 			"settings": {
 				"foreground": "#c9b152",
@@ -779,7 +779,7 @@
 		{
 			"scope": "meta.selector.css entity.other.attribute-name.id",
 			"settings": {
-				"foreground": "#E173C5",
+				"foreground": "#C792EA",
 				"fontStyle": ""
 			}
 		},
@@ -797,7 +797,6 @@
 				"fontStyle": ""
 			}
 		},
-
 		{
 			"scope": "variable.language.js",
 			"settings": {
@@ -914,7 +913,7 @@
 		{
 			"scope": "markup.quote",
 			"settings": {
-				"foreground": "#E173C5"
+				"foreground": "#C792EA"
 			}
 		},
 		{
@@ -1023,15 +1022,99 @@
 				"foreground": "#C7444A"
 			}
 		},
-            {
-                "name": "JSON Key - Level 0",
-                "scope": [
-                    "source.json meta.structure.dictionary.json support.type.property-name.json"
-                ],
-                "settings": {
-                    "foreground": "#C792EA"
-                }
-            }
-		
+		{
+			"name": "JSON Key - Level 0",
+			"scope": [
+				"source.json meta.structure.dictionary.json support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.block.twig punctuation.section.tag.twig",
+			"settings": {
+				"foreground": "#eba141"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig meta.function.arguments.twig keyword.operator.assignment.twig",
+			"settings": {
+				"foreground": "#eba141"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.block.twig keyword.operator.comparison.twig",
+			"settings": {
+				"foreground": "#e62c2c"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.block.twig keyword.control.twig",
+			"settings": {
+				"foreground": "#8b92f5"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig meta.function-call.twig",
+			"settings": {
+				"foreground": "#C5C8C6"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig variable.other.property.twig",
+			"settings": {
+				"foreground": "#89a8b1"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig punctuation.separator.property.twig",
+			"settings": {
+				"foreground": "#C9B152"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig meta.function.arguments.twig",
+			"settings": {
+				"foreground": "#C9B152"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.block.twig variable.other.twig",
+			"settings": {
+				"foreground": "#C5C8C6"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.block.twig variable.other.property.twig",
+			"settings": {
+				"foreground": "#89A8B1"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig variable.other.twig",
+			"settings": {
+				"foreground": "#C5C8C6"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig punctuation.definition.parameters.begin.twig",
+			"settings": {
+				"foreground": "#89A8B1"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig punctuation.definition.parameters.end.twig",
+			"settings": {
+				"foreground": "#89A8B1"
+			}
+		},
+		{
+			"scope": "text.html.twig meta.tag.template.value.twig punctuation.section.tag.twig",
+			"settings": {
+				"foreground": "#eba141"
+			}
+		}
 	]
 }
+
