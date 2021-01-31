@@ -1039,7 +1039,7 @@
 				"punctuation.section.tag.njk"
 			],
 			"settings": {
-				"foreground": "#f3bb22"
+				"foreground": "#f78181"
 			}	
 		},
 
@@ -1049,7 +1049,7 @@
 				"keyword.control.njk"
 			],
 			"settings": {
-				"foreground": "#f78181"
+				"foreground": "#33dbe0"
 			}
 		},
 		{
