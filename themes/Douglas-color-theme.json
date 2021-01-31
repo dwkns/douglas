@@ -747,7 +747,7 @@
 			}
 		},
 		{
-			"comment": "#Punctuation for strings",
+
 			"scope": "punctuation.definition.string.begin, punctuation.definition.string.end",
 			"settings": {
 				"foreground": "#56b7ca",
@@ -755,7 +755,7 @@
 			}
 		},
 		{
-			"comment": "#String Text colour",
+
 			"scope": "string.quoted.double",
 			"settings": {
 				"foreground": "#c9b152",
@@ -1031,90 +1031,126 @@
 				"foreground": "#C792EA"
 			}
 		},
+		// --------------------------- Nunjucks colours --------------------------- 
+	
 		{
-			"scope": "text.html.twig meta.tag.template.block.twig punctuation.section.tag.twig",
+			"name": "Nunjcks | {{",
+			"scope": [
+				"punctuation.section.tag.njk"
+			],
 			"settings": {
-				"foreground": "#eba141"
+				"foreground": "#f3bb22"
+			}	
+		},
+
+		{
+			"name": "Nunjcks | keyword",
+			"scope": [
+				"keyword.control.njk"
+			],
+			"settings": {
+				"foreground": "#f78181"
 			}
 		},
 		{
-			"scope": "text.html.twig meta.tag.template.value.twig meta.function.arguments.twig keyword.operator.assignment.twig",
+			"name": "Nunjcks | =",
+			"scope": [
+				"keyword.operator.assignment.njk"
+			],
 			"settings": {
-				"foreground": "#eba141"
+				"foreground": "#33dbe0"
 			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.block.twig keyword.operator.comparison.twig",
+		},	{
+			"name": "Nunjcks | == < >",
+			"scope": [
+				"keyword.operator.comparison.njk"
+			],
 			"settings": {
-				"foreground": "#e62c2c"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.block.twig keyword.control.twig",
-			"settings": {
-				"foreground": "#8b92f5"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig meta.function-call.twig",
-			"settings": {
-				"foreground": "#C5C8C6"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig variable.other.property.twig",
-			"settings": {
-				"foreground": "#89a8b1"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig punctuation.separator.property.twig",
-			"settings": {
-				"foreground": "#C9B152"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig meta.function.arguments.twig",
-			"settings": {
-				"foreground": "#C9B152"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.block.twig variable.other.twig",
-			"settings": {
-				"foreground": "#C5C8C6"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.block.twig variable.other.property.twig",
-			"settings": {
-				"foreground": "#89A8B1"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig variable.other.twig",
-			"settings": {
-				"foreground": "#C5C8C6"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig punctuation.definition.parameters.begin.twig",
-			"settings": {
-				"foreground": "#89A8B1"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig punctuation.definition.parameters.end.twig",
-			"settings": {
-				"foreground": "#89A8B1"
-			}
-		},
-		{
-			"scope": "text.html.twig meta.tag.template.value.twig punctuation.section.tag.twig",
-			"settings": {
-				"foreground": "#eba141"
+				"foreground": "#33dbe0"
 			}
 		}
+		,	{
+			"name": "Nunjcks | and or ",
+			"scope": [
+				"keyword.operator.logical.njk"
+			],
+			"settings": {
+				"foreground": "#f78181"
+			}
+		},
+		{
+			"name": "Nunjcks | Function call",
+			"scope": [
+				"meta.function-call.njk"
+			
+			],
+			"settings": {
+				"foreground": "#FFF"
+			}
+		},
+	
+		{
+			"name": "Nunjcks | )",
+			"scope": [
+				"punctuation.definition.parameters.end.njk"
+			
+			],
+			"settings": {
+				"foreground": "#33dbe0"
+			}
+		},
+
+		{
+			"name": "Nunjcks | (",
+			"scope": [
+				" punctuation.definition.parameters.begin.njk"
+			
+			],
+			"settings": {
+				"foreground": "#33dbe0"
+			}
+		},
+
+		{
+			"name": "Nunjcks | Tag Variable",
+			"scope": [
+				"variable.other.njk"
+
+			],
+			"settings": {
+				"foreground": "#fff"
+			}
+		},
+
+		{
+			"name": "Nunjcks | function argument Variable",
+			"scope": [
+				"text.html.njk meta.tag.template.block.njk meta.function.arguments.njk"
+
+			],
+			"settings": {
+				"foreground": "#FFF"
+			}
+		},
+
+		
+
+		{
+			"name": "Nunjcks | Block Variable",
+			"scope": [
+				"text.html.njk meta.tag.template.block.njk variable.other.njk"
+
+			],
+			"settings": {
+				"foreground": "#FFF"
+			}
+		},
+
+
+
+	
+
 	]
 }
+
 
