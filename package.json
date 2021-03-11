@@ -1,6 +1,6 @@
 {
-    "name": "douglas2",
-    "displayName": "douglas2",
+    "name": "douglas",
+    "displayName": "douglas",
     "description": "",
     "version": "0.0.1",
     "engines": {
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Douglas2",
+                "label": "Douglas",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Douglas2-color-theme.json"
+                "path": "./themes/Douglas-color-theme.json"
             }
         ]
     }
