@@ -1,11 +1,20 @@
 {
     "name": "douglas",
     "displayName": "douglas",
-    "description": "",
+    "description": "Theme of the dog",
     "version": "0.0.1",
+    "publisher": "dwkns",
+    "license": "MIT",
+    "author": {
+        "name": "dwkns",
+        "email": "dwkns@me.com",
+        "url": "https://dwkns.com"
+    },
+
     "engines": {
         "vscode": "^1.54.0"
     },
+    "icon": "images/dog.png",
     "categories": [
         "Themes"
     ],
