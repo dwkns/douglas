@@ -24,6 +24,11 @@
                 "label": "Douglas",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Douglas-color-theme.json"
+            },
+            {
+                "label": "Douglas Material",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Douglas-material.json"
             }
         ]
     }
