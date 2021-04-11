@@ -1,62 +1,64 @@
 {
-    "name": "douglas",
-    "displayName": "Douglas",
-    "description": "Theme of the dog",
-    "version": "0.0.3",
-    "publisher": "dwkns",
-    "license": "MIT",
-    "author": {
-        "name": "dwkns",
-        "email": "dwkns@me.com",
-        "url": "https://dwkns.com"
-    },
-
-    "engines": {
-        "vscode": "^1.54.0"
-    },
-    "icon": "images/dog.png",
-    "categories": [
-        "Themes"
+  "name": "douglas",
+  "displayName": "Douglas",
+  "description": "Theme of the dog",
+  "version": "0.0.3",
+  "publisher": "dwkns",
+  "license": "MIT",
+  "author": {
+    "name": "dwkns",
+    "email": "dwkns@me.com",
+    "url": "https://dwkns.com"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "icon": "images/dog.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      }
     ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "dwkns",
-                "uiTheme": "vs-dark",
-                "path": "./themes/dwkns-color-theme.json"
-            }
+    "themes": [
+      {
+        "label": "dwkns",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dwkns-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "html",
+        "aliases": [
+          "HTML",
+          "nunjucks",
+          "njk"
         ],
-        "languages": [
-            {
-                "id": "html",
-                "aliases": [
-                    "HTML",
-                    "nunjucks",
-                    "njk"
-                ],
-                "extensions": [
-                    ".html",
-                    ".njk"
-                   
-                ],
-                "configuration": "./languages/njk.configuration.json"
-            }
+        "extensions": [
+          ".html",
+          ".njk"
         ],
-
-        "grammars": [
-        {
-            "language": "html",
-            "scopeName": "text.html.njk",
-            "path": "./syntaxes/njk.tmLanguage",
-            "embeddedLanguages": {
-                "source.json": "json",
-                "source.css": "css",
-                "source.css.scss": "scss",
-                "source.js": "javascript",
-                "source.ts": "typescript"
-            }
+        "configuration": "./languages/njk.configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "html",
+        "scopeName": "text.html.njk",
+        "path": "./syntaxes/njk.tmLanguage",
+        "embeddedLanguages": {
+          "source.json": "json",
+          "source.css": "css",
+          "source.css.scss": "scss",
+          "source.js": "javascript",
+          "source.ts": "typescript"
         }
+      }
     ]
-
-    }
+  }
 }

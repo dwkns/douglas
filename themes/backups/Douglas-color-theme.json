@@ -33,7 +33,7 @@
     "editor.selectionHighlightBackground": "#FFCC0020",
     "editorBracketMatch.background": "#242424",
     "editorBracketMatch.border": "#FFCC0050",
-    "editorCursor.foreground": "#FFCC00",
+    "editorCursor.foreground": "#00ff00",
     "editorError.foreground": "#FF537070",
     "editorGroup.border": "#00000030",
     "editorGroupHeader.tabsBackground": "#242424",
@@ -154,8 +154,7 @@
     "statusBarItem.remoteBackground": "#80CBC4",
     "statusBarItem.remoteForeground": "#000000",
     "tab.activeBackground": "#242424",
-  
-    "tab.activeBorder": "#80CBC4",
+    "tab.activeBorder": "#80CBC4", //80CBC4
     "tab.activeForeground": "#FFFFFF",
     "tab.activeModifiedBorder": "#848484",
     "tab.border": "#242424",
