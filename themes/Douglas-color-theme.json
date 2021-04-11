@@ -59,7 +59,7 @@
 		"terminal.ansiRed": "#c4265e",
 		"terminal.ansiWhite": "#e3e3dd",
 		"terminal.ansiYellow": "#b3b42b",
-		"titleBar.activeBackground": "#505050",
+		"titleBar.activeBackground": "#505050"
 		//"activityBar.activeBorder": "#ffffff",
 		//"activityBar.dropBorder": "#ffffff",
 		//"activityBar.inactiveForeground": "#ffffff66",
