@@ -2,7 +2,7 @@
     "name": "douglas",
     "displayName": "Douglas",
     "description": "Theme of the dog",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "dwkns",
     "license": "MIT",
     "author": {
@@ -14,21 +14,21 @@
     "engines": {
         "vscode": "^1.54.0"
     },
-    "icon": "images/dog.png",
+    "icon": "https://github.com/dwkns/vscode-njk-extension/raw/main/images/icon.png",
     "categories": [
         "Themes"
     ],
     "contributes": {
         "themes": [
             {
+                "label": "Douglas Original",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Douglas-orig.json"
+            },
+            {
                 "label": "Douglas",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Douglas-color-theme.json"
-            },
-            {
-                "label": "Douglas Material",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Douglas-material.json"
             }
         ]
     }

@@ -2,7 +2,7 @@
   "name": "Douglas Material",
   "type": "dark",
   "colors": {
-    "activityBar.background": "#1a1a1a",
+    "activityBar.background": "#353535",
     "activityBar.border": "#00000060",
     "activityBar.foreground": "#EEFFFF",
     "activityBarBadge.background": "#80CBC4",
