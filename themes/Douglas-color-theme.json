@@ -622,7 +622,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#3a5ae7"
       }
     },
     {
@@ -1187,7 +1187,7 @@
 				"keyword.control.njk"
 			],
 			"settings": {
-				"foreground": "#33dbe0"
+				"foreground": "#e018c6"
 			}
 		},
 		{
