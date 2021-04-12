@@ -50,9 +50,10 @@
       {
         "language": "html",
         "scopeName": "text.html.njk",
-        "path": "./syntaxes/njk.tmLanguage",
+        "path": "./syntaxes/njk.tmLanguage.json",
         "embeddedLanguages": {
           "source.json": "json",
+          "source.yaml": "yaml",
           "source.css": "css",
           "source.css.scss": "scss",
           "source.js": "javascript",
