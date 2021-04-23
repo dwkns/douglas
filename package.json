@@ -1,66 +1,342 @@
 {
-  "name": "douglas",
-  "displayName": "Douglas",
-  "description": "Theme of the dog",
-  "version": "0.0.3",
-  "publisher": "dwkns",
-  "license": "MIT",
-  "author": {
-    "name": "dwkns",
-    "email": "dwkns@me.com",
-    "url": "https://dwkns.com"
-  },
-  "engines": {
-    "vscode": "^1.54.0"
-  },
-  "icon": "images/dog.png",
-  "categories": [
-    "Themes"
-  ],
-  
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets/snippets.json"
-      }
+    "name": "eleventy-njk",
+    "displayName": "Eleventy njk",
+    "description": "Snippets, Syntax Highlighting, Hover, and Formatting for njk",
+    "version": "0.0.2",
+    "publisher": "dwkns",
+    "license": "MIT",
+    "author": {
+        "name": "dwkns",
+        "email": "dwkns@me.com",
+        "url": "https://dwkns.com"
+    },
+    "homepage": "https://github.com/dwkns/eleventy",
+    "bugs": {
+        "url": "https://github.com/dwkns/eleventy/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dwkns/eleventy.git"
+    },
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Formatters",
+        "Programming Languages",
+        "Snippets",
+        "Other"
     ],
-    "themes": [
-      {
-        "label": "dwkns",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dwkns-color-theme.json"
-      }
+    "keywords": [
+        "njk",
+        "snippets",
+        "beautify"
     ],
-    "languages": [
-      {
-        "id": "njk",
-        "aliases": [
-          "HTML",
-          "nunjucks",
-          "njk"
+    "activationEvents": [
+        "onLanguage:njk"
+    ],
+    "main": "./extension/index",
+    "contributes": {
+
+        "languages": [
+            {
+                "id": "njk",
+                "aliases": [
+                    "HTML (njk)",
+                    "nunjucks"
+                ],
+                "extensions": [
+                    ".njk",
+                    ".html.njk"
+                ],
+                "configuration": "./src/languages/njk.configuration.json"
+            }
         ],
-        "extensions": [
-          ".html",
-          ".njk"
+        "grammars": [
+            {
+                "language": "njk",
+                "scopeName": "text.html.njk",
+                "path": "./src/syntaxes/njk.tmLanguage.json",
+                "embeddedLanguages": {
+                    "source.json": "json",
+                    "source.css": "css",
+                    "source.css.scss": "scss",
+                    "source.js": "javascript",
+                    "source.ts": "typescript"
+                }
+            }
         ],
-        "configuration": "./languages/njk.configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "html",
-        "scopeName": "text.html.njk",
-        "path": "./syntaxes/njk.tmLanguage.json",
-        "embeddedLanguages": {
-          "source.json": "json",
-          "source.yaml": "yaml",
-          "source.css": "css",
-          "source.css.scss": "scss",
-          "source.js": "javascript",
-          "source.ts": "typescript"
+        "snippets": [
+            {
+                "language": "njk",
+                "path": "./src/snippets/snippets.json"
+            }
+        ],
+        "themes": [
+            {
+              "label": "dwkns",
+              "uiTheme": "vs-dark",
+              "path": "./src/themes/dwkns-color-theme.json"
+            }
+          ],
+        "configuration": {
+            "type": "object",
+            "title": "njk",
+            "properties": {
+                "njk.hover": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to enable/disable Twig hover."
+                },
+                "njk.formatting": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to enable/disable Twig PrettyDiff formatting."
+                },
+                "njk.braceLine": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If true an empty line will be inserted after opening curly braces and before closing curly braces."
+                },
+                "njk.bracePadding": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Inserts a space after the start of a container and before the end of the container if the contents of that container are not indented; such as: conditions, function arguments, and escaped sequences of template strings."
+                },
+                "njk.braceStyle": {
+                    "type": "string",
+                    "enum": [
+                        "collapse",
+                        "collapse-preserve-inline",
+                        "expand",
+                        "none"
+                    ],
+                    "default": "none",
+                    "description": "Emulates JSBeautify's brace_style option using existing Pretty Diff options."
+                },
+                "njk.braces": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Determines if opening curly braces will exist on the same line as their condition or be forced onto a new line."
+                },
+                "njk.commentLine": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If a blank new line should be forced above comments."
+                },
+                "njk.comments": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "This will determine whether comments should always start at position 0 of each line or if comments should be indented according to the code."
+                },
+                "njk.compressedCss": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If CSS should be beautified in a style where the properties and values are minifed for faster reading of selectors."
+                },
+                "njk.correct": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Automatically correct some sloppiness in code."
+                },
+                "njk.cssInsertLines": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Inserts new line characters between every CSS code block."
+                },
+                "njk.elseLine": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If else_line is true then the keyword 'else' is forced onto a new line."
+                },
+                "njk.endComma": {
+                    "type": "string",
+                    "enum": [
+                        "always",
+                        "never",
+                        "none"
+                    ],
+                    "default": false,
+                    "description": "If there should be a trailing comma in arrays and objects. Value multiline only applies to modes beautify and diff."
+                },
+                "njk.forceAttribute": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If all markup attributes should be indented each onto their own line."
+                },
+                "njk.forceIndent": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Will force indentation upon all content and tags without regard for the creation of new text nodes."
+                },
+                "njk.formatArray": {
+                    "type": "string",
+                    "enum": [
+                        "default",
+                        "indent",
+                        "inline"
+                    ],
+                    "default": "default",
+                    "description": "Determines if all array indexes should be indented, never indented, or left to the default."
+                },
+                "njk.formatObject": {
+                    "type": "string",
+                    "enum": [
+                        "default",
+                        "indent",
+                        "inline"
+                    ],
+                    "default": "default",
+                    "description": "Determines if all object keys should be indented, never indented, or left to the default."
+                },
+                "njk.functionName": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If a space should follow a JavaScript function name."
+                },
+                "njk.indentStyle": {
+                    "type": "string",
+                    "enum": [
+                        "space",
+                        "tab"
+                    ],
+                    "default": "tab",
+                    "description": "Choose to indent using tabs or spaces."
+                },
+                "njk.indentLevel": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "How much indentation padding should be applied to beautification? This option is internally used for code that requires switching between libraries."
+                },
+                "njk.tabSize": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "0 will default to the editor's tab size. Stores the number of 'inchar' values to comprise a single indentation."
+                },
+                "njk.methodChain": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "When to break consecutively chained methods and properties onto separate lines. A negative value disables this option. A value of 0 ensures method chains are never broken."
+                },
+                "njk.neverFlatten": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If destructured lists in script should never be flattend."
+                },
+                "njk.newLine": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Insert an empty line at the end of output."
+                },
+                "njk.noCaseIndent": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If a case statement should receive the same indentation as the containing switch block."
+                },
+                "njk.noLeadZero": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether leading 0s in CSS values immediately preceeding a decimal should be removed or prevented."
+                },
+                "njk.objectSort": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Sorts markup attributes and properties by key name in script and style."
+                },
+                "njk.preserve": {
+                    "type": "integer",
+                    "default": 2,
+                    "description": "The maximum number of consecutive empty lines to retain."
+                },
+                "njk.preserveComment": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Prevent comment reformatting due to option wrap."
+                },
+                "njk.quoteConvert": {
+                    "type": "string",
+                    "enum": [
+                        "double",
+                        "none",
+                        "single"
+                    ],
+                    "default": "none",
+                    "description": "If the quotes of script strings or markup attributes should be converted to single quotes or double quotes."
+                },
+                "njk.space": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Inserts a space following the function keyword for anonymous functions."
+                },
+                "njk.spaceClose": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Markup self-closing tags end will end with ' />' instead of '/>'."
+                },
+                "njk.tagMerge": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Allows immediately adjacement start and end markup tags of the same name to be combined into a single self-closing tag."
+                },
+                "njk.tagSort": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Sort child items of each respective markup parent element."
+                },
+                "njk.ternaryLine": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "If ternary operators in JavaScript ? and : should remain on the same line."
+                },
+                "njk.unformatted": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If markup tags should have their insides preserved. This option is only available to markup and does not support child tokens that require a different lexer."
+                },
+                "njk.variableList": {
+                    "type": "string",
+                    "enum": [
+                        "each",
+                        "list",
+                        "none"
+                    ],
+                    "default": "none",
+                    "description": "If consecutive JavaScript variables should be merged into a comma separated list or if variables in a list should be separated."
+                },
+                "njk.vertical": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "If lists of assignments and properties should be vertically aligned. This option is not used with the markup lexer."
+                },
+                "njk.wrap": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "Character width limit before applying word wrap. A 0 value disables this option. A negative value concatenates script strings."
+                }
+            }
         }
-      }
-    ]
-  }
+    },
+    "capabilities": {
+        "hoverProvider": "true"
+    },
+    "scripts": {
+        "start": "rollup -c",
+        "build": "rollup -c",
+        "watch": "rollup -c -w"
+    },
+    "devDependencies": {
+        "@types/mocha": "^8.0.3",
+        "@types/node": "^14.6.0",
+        "eslint": "^7.7.0",
+        "eslint-config-prettier": "^6.11.0",
+        "typescript": "^4.0.2",
+        "vscode": "^1.1.37"
+    },
+    "dependencies": {
+        "prettydiff": "^101.2.6",
+        "rollup": "^2.26.5",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-json": "^4.0.0"
+    }
 }
