@@ -34,7 +34,7 @@
     ],
     "languages": [
       {
-        "id": "html",
+        "id": "njk",
         "aliases": [
           "HTML",
           "nunjucks",
