@@ -130,7 +130,7 @@
       "description": "Logical or operator."
     },
     "filter": {
-      "prefix": "pipe",
+      "prefix": "filter",
       "body": "| ${1:filter}",
       "description":
         "You can pass filters from the variable directly e.g. {{ foo | escape }}"
