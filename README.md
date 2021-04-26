@@ -10,3 +10,6 @@ In your settings file:
 
 This might be a better (simpler) starting place:
 https://github.com/eseom/nunjucks-template
+
+
+https://vscode.readthedocs.io/en/latest/getstarted/theme-color-reference/

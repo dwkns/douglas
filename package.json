@@ -64,6 +64,7 @@
                     "source.css.scss": "scss",
                     "source.js": "javascript",
                     "source.ts": "typescript"
+                    
                 }
             }
         ],
