@@ -1,7 +1,7 @@
 const vscode = require("vscode");
 const prettydiff = require("./vendor/prettydiff2/prettydiff");
 
-const id = "nunjucks";
+const id = "njk";
 
 function format(document, range, options) {
   const result = [];

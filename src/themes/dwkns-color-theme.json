@@ -1134,15 +1134,15 @@
             }
         },
         // NJK
-        {
-            "name": "njk | punctuation ",
-            "scope": [
-                "punctuation.section.tag.njk"
-            ],
-            "settings": {
-                "foreground": "#f05b06"
-            }
-        },
+        // {
+        //     "name": "njk | punctuation ",
+        //     "scope": [
+        //         "punctuation.section.tag.njk"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#f05b06"
+        //     }
+        // },
         {
             "name": "NJK | variables ",
             "scope": [
@@ -1150,25 +1150,37 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#FFCB6B"
+                "foreground": "#d4b77f"
             }
         },
+        // {
+        //     "name": "NJK | Function arguments ",
+        //     "scope": [
+        //         "meta.function.arguments.njk"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#77ff6b"
+        //     }
+        // },
+
+        
+        // {
+        //     "name": "NJK | Hashes",
+        //     "scope": [
+        //         "meta.hash.njk variable.other.njk"
+        //     ],
+        //     "settings": {
+        //         "foreground": "#6bff77"
+        //     }
+        // },
+
         {
-            "name": "NJK | Function arguments ",
+            "name": "NJK | Tag",
             "scope": [
-                "meta.function.arguments.njk"
+                "text.html.njk comment.block.njk entity.other.njk.delimiter.tag"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
-            }
-        },
-        {
-            "name": "NJK | Hashes",
-            "scope": [
-                "meta.hash.njk variable.other.njk"
-            ],
-            "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#da6f81"
             }
         },
         {
@@ -1177,7 +1189,7 @@
                 "keyword.control.njk"
             ],
             "settings": {
-                "foreground": "#EE7BE8"
+                "foreground": "#597dac"
             }
         },
         {

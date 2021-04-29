@@ -26,47 +26,40 @@
     "Formatters"
   ],
   "activationEvents": [
-    "onLanguage:nunjucks"
+    "onLanguage:njk"
   ],
   "main": "./extension.js",
   "contributes": {
+    "snippets": [
+      {
+        "language": "njk",
+        "path": "./src/snippets/snippets.json"
+      }
+    ],
+    "commands": [],
     "languages": [
       {
-        "id": "nunjucks",
+        "id": "njk",
         "aliases": [
-          "HTML Nunjucks",
           "Nunjucks",
-          "nunjucks",
-          "Njk",
           "njk"
         ],
         "extensions": [
-          ".nunjucks",
-          ".nunjs",
-          ".nunj",
-          ".nj",
-          ".njk",
-          ".html",
-          ".htm",
-          "template",
-          ".tmpl",
-          ".tpl"
+          ".njk"
         ],
-        "configuration": "./nunjucks.json"
+        "configuration": "./src/languages/njk.configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "nunjucks",
+        "language": "njk",
+        "scopeName": "source.njk",
+        "path": "./src/syntaxes/njk.json"
+      },
+      {
+        "language": "njk",
         "scopeName": "text.html.njk",
-        "path": "./src/syntaxes/njk.tmLanguage.json",
-        "embeddedLanguages": {
-          "source.json": "json",
-          "source.css": "css",
-          "source.css.scss": "scss",
-          "source.js": "javascript",
-          "source.ts": "typescript"
-        }
+        "path": "./src/syntaxes/njk-html.json"
       }
     ],
     "themes": [
@@ -74,12 +67,6 @@
         "label": "dwkns",
         "uiTheme": "vs-dark",
         "path": "./src/themes/dwkns-color-theme.json"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "nunjucks",
-        "path": "./src/snippets/snippets.json"
       }
     ],
     "configuration": {
