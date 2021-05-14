@@ -1163,7 +1163,8 @@
         //     }
         // },
 
-        
+
+
         // {
         //     "name": "NJK | Hashes",
         //     "scope": [
@@ -1178,6 +1179,15 @@
             "name": "NJK | Tag",
             "scope": [
                 "text.html.njk comment.block.njk entity.other.njk.delimiter.tag"
+            ],
+            "settings": {
+                "foreground": "#da6f81"
+            }
+        },
+        {
+            "name": "NJK | Variable",
+            "scope": [
+                "text.html.njk comment.block.njk entity.other.njk.delimiter.variable"
             ],
             "settings": {
                 "foreground": "#da6f81"
