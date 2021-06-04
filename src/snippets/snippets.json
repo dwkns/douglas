@@ -88,9 +88,15 @@
       "description":
         "macro allows you to define reusable chunks of content. It is similar to a function in a programming language. "
     },
+    "End Macro": {
+      "prefix": "end macro",
+      "body": "{% endmacro %}",
+      "description":
+        "macro closing tag "
+    },
     "Import": {
       "prefix": "import",
-      "body": "{% import \"${1:template}\" as ${2:var} %}$3",
+      "body": "{% import \"${1:template}\" as ${2:var} with context %}$3",
       "description":
         "import loads a different template and allows you to access its exported values. Macros and top-level assignments (done with set) are exported from templates, allowing you to access them in a different template."
     },
