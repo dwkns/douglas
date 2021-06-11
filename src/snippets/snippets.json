@@ -94,6 +94,12 @@
       "description":
         "macro closing tag "
     },
+    "End If": {
+      "prefix": "end if",
+      "body": "{% endif %}",
+      "description":
+        "endif closing tag "
+    },
     "Import": {
       "prefix": "import",
       "body": "{% import \"${1:template}\" as ${2:var} with context %}$3",
