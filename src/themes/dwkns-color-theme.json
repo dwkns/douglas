@@ -1,6 +1,6 @@
 {
     "colors": {
-        "editor.selectionBackground": "#e788ff7c", //Currently SELECTED text
+        "editor.selectionBackground": "#e388ff3f", //Currently SELECTED text
         "editor.selectionHighlightBackground": "#d6d6d638", //Same content as selection
         "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
         "editor.findMatchHighlightBackground": "#ff7b00a1", //Other SEARCH MATCHES

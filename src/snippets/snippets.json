@@ -74,7 +74,7 @@
     },
     "Else": {
       "prefix": "else",
-      "body": "{%- else ${1:condition} -%}\n\t$2",
+      "body": "{%- else -%}\n\t$2",
       "description": "Alternate condition in the if block"
     },
     "Set": {
