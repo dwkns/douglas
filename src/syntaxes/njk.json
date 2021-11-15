@@ -81,7 +81,7 @@
   "repository": {
     "frontMatter": {
       "begin": "\\A-{3}\\s*$",
-      "contentName": "meta.embedded.block.frontmatter",
+      "contentName": "meta.embedded.block.yaml source.yaml",
       "patterns": [{
         "include": "source.yaml"
       }],

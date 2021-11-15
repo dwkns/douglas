@@ -54,12 +54,28 @@
       {
         "language": "njk",
         "scopeName": "source.njk",
-        "path": "./src/syntaxes/njk.json"
+        "path": "./src/syntaxes/njk.json",
+        "embeddedLanguages": {
+          "text.html": "html",
+          "source.css": "css",
+          "source.js": "javascript",
+          "source.yaml": "yaml",
+          "source.njk": "njk",
+          "source.md": "md"
+      }
       },
       {
         "language": "njk",
         "scopeName": "text.html.njk",
-        "path": "./src/syntaxes/njk-html.json"
+        "path": "./src/syntaxes/njk-html.json",
+        "embeddedLanguages": {
+          "text.html": "html",
+          "source.css": "css",
+          "source.js": "javascript",
+          "source.yaml": "yaml",
+          "source.njk": "njk",
+          "source.md": "md"
+      }
       }
     ],
     "themes": [
