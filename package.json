@@ -1,27 +1,27 @@
 {
   "name": "eleventy-njk",
-    "displayName": "Eleventy njk",
-    "description": "Snippets, Syntax Highlighting, Hover, and Formatting for njk",
-    "version": "0.0.2",
-    "publisher": "dwkns",
-    "license": "MIT",
-    "author": {
-        "name": "dwkns",
-        "email": "dwkns@me.com",
-        "url": "https://dwkns.com"
-    },
-    "homepage": "https://github.com/dwkns/eleventy",
-    "bugs": {
-        "url": "https://github.com/dwkns/eleventy/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dwkns/eleventy.git"
-    },
-    "icon": "images/icon.png",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
+  "displayName": "Eleventy njk",
+  "description": "Snippets, Syntax Highlighting, Hover, and Formatting for njk",
+  "version": "0.0.2",
+  "publisher": "dwkns",
+  "license": "MIT",
+  "author": {
+    "name": "dwkns",
+    "email": "dwkns@me.com",
+    "url": "https://dwkns.com"
+  },
+  "homepage": "https://github.com/dwkns/eleventy",
+  "bugs": {
+    "url": "https://github.com/dwkns/eleventy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwkns/eleventy.git"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
   "categories": [
     "Formatters"
   ],
@@ -62,20 +62,19 @@
           "source.yaml": "yaml",
           "source.njk": "njk",
           "source.md": "md"
-      }
+        }
       },
       {
         "language": "njk",
         "scopeName": "text.html.njk",
         "path": "./src/syntaxes/njk-html.json",
         "embeddedLanguages": {
-          "text.html": "html",
           "source.css": "css",
           "source.js": "javascript",
           "source.yaml": "yaml",
           "source.njk": "njk",
           "source.md": "md"
-      }
+        }
       }
     ],
     "themes": [

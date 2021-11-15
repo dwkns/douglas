@@ -3,7 +3,6 @@
   "scopeName": "text.html.njk",
   "comment": "Nunjucks Template",
   "fileTypes": ["nj", "njk", "html","md"],
-  "firstLineMatch": "^{% extends [\"'][^\"']+[\"'] %}",
   "foldingStartMarker": "(<(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\\b.*?>|{%\\s*(block|filter|for|if|macro|raw))",
   "foldingStopMarker": "(</(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\\b.*?>|{%\\s*(endblock|endfilter|endfor|endif|endmacro|endraw)\\s*%})",
   "patterns": [

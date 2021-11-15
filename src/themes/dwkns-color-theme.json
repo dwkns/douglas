@@ -584,7 +584,7 @@
                 "punctuation.definition.tag.end.html"
             ],
             "settings": {
-                "foreground": "#EEFFFF"
+                "foreground": "#F7F8F8"
             }
         },
         {
