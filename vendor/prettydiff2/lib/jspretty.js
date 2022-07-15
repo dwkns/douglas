@@ -2467,6 +2467,7 @@
                             "form",
                             "if",
                             "macro",
+                            "switch",
                             "paginate",
                             "raw",
                             "sandbox",

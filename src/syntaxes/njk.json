@@ -7,8 +7,8 @@
     "njk",
     "md"
   ],
-  "foldingStartMarker": "({%\\s*(block|filter|for|if|macro|raw))",
-  "foldingStopMarker": "({%\\s*(endblock|endfilter|endfor|endif|endmacro|endraw)\\s*%})",
+  "foldingStartMarker": "({%\\s*(block|filter|for|if|macro|raw|switch))",
+  "foldingStopMarker": "({%\\s*(endblock|endfilter|endfor|endif|endmacro|endraw|endswitch)\\s*%})",
   "patterns": [
     {"include": "#frontMatter"},
     {
