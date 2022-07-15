@@ -38,6 +38,12 @@
       "body": "{%- for ${1:item} in ${2:sequence} -%}\n\t$3\n{%- endfor -%}",
       "description": "for iterates over arrays and dictionaries."
     },
+    "switch": {
+      "prefix": "switch",
+      "body": "{% switch ${1:foo} %}\n\t{% case '${2:bar}' %}\n\n\t{% case '${3:baz}' %}\n\n\t{% default %}\n\t\n{% endswitch %}",
+      "description":
+        "Switch statement."
+    },
     "asyncEach": {
       "prefix": "asyncEach",
       "body": "{%- asyncEach ${1:item} in ${2:sequence} -%}\n\t$3\n{%- endeach -%}",
