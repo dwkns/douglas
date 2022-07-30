@@ -38,18 +38,18 @@
       "body": "{%- for ${1:item} in ${2:sequence} -%}\n\t$3\n{%- endfor -%}",
       "description": "for iterates over arrays and dictionaries."
     },
-    // "switch": {
-    //   "prefix": "switch",
-    //   "body": "{% switch ${1:foo} %}\n\t{% case '${2:bar}' %}\n\n\t{% case '${3:baz}' %}\n\n\t{% default %}\n\t\n{% endswitch %}",
-    //   "description":
-    //     "Switch statement."
-    // },
-    "Switch": {
+    "switch": {
       "prefix": "switch",
-      "body": "{%- switch ${1:name}(${2:args}) -%}\n\t$3\n{%- endswitch -%}",
+      "body": "{% switch ${1:foo} %}\n\t{% case '${2:bar}' %}\n\n\t{% case '${3:baz}' %}\n\n\t{% default %}\n\t\n{% endswitch %}",
       "description":
-        "switch allows you to define reusable chunks of content. It is similar to a function in a programming language. "
+        "Switch statement."
     },
+    // "Switch": {
+    //   "prefix": "switch",
+    //   "body": "{%- switch ${1:name}(${2:args}) -%}\n\t$3\n{%- endswitch -%}",
+    //   "description":
+    //     "switch allows you to define reusable chunks of content. It is similar to a function in a programming language. "
+    // },
     "asyncEach": {
       "prefix": "asyncEach",
       "body": "{%- asyncEach ${1:item} in ${2:sequence} -%}\n\t$3\n{%- endeach -%}",
