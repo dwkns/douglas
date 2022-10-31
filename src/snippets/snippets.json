@@ -145,7 +145,7 @@
   },
   "console log": {
     "prefix": "con",
-    "body": "{{ $1 | console | safe  }}",
+    "body": "{% console $1, '${1:title}' %}",
     "description": "Log things to your console plugin"
   }
 }
